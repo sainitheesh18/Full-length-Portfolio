@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
     <h1>Nitheeshreddy's component library</h1>
@@ -16,6 +16,7 @@
     <h1>This is the biggest heading</h1>
     <h2>This is the second biggest</h2>
     <p>Let me show you the normal text.This is free flowing and will wrap at the end like a paragraph</p>
+    <p>This paragraph will have a <strong>bold </strong>text</p>
     <small>This is relatively smaller text</small>
 
     <hr>
@@ -23,25 +24,26 @@
     <h2>@container</h2>
 
     <h3>fluid container</h3>
-    <div>This is a fluid container and it will go till the end of the page</div>
+    <div class="container">This is a fluid container and it will go till the end of the page</div>
 
     <h3>center container</h3>
-    <div>This is a centered container it will go till the specified width</div>
+    <div class="container container-center">This is a centered container it will go till the specified width</div>
 
     <hr>
 
     <h2>@links</h2>
 
-    <a href="/">Primary link</a>
-    <a href="/">Secondary link</a>
+    <a class="link link-primary" href="/">Primary link</a>
+    <a class="link link-secondary" href="/">Secondary link</a>
 
     <hr>
 
     <h2>@lists</h2>
 
     <h3>unordered list</h3>
+    <p>This list will not have bullet</p>
 
-    <ul>
+    <ul class="list-non-bullet">
         <li>Item one</li>
         <li>Item two</li>
         <li>Item three</li>
@@ -49,15 +51,15 @@
 
     <h3>unordered inline list</h3>
 
-    <ul>
-        <li>Inline Item one</li>
-        <li>Inline Item two</li>
-        <li>Inline Item three</li>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">Inline Item one</li>
+        <li class="list-item-inline">Inline Item two</li>
+        <li class="list-item-inline">Inline Item three</li>
     </ul>
 
     <h3>reverse ordered list</h3>
 
-    <ol>
+    <ol reversed>
         <li>milk</li>
         <li>eggs</li>
         <li>break</li>
@@ -67,12 +69,12 @@
 
     <h2>@Nav</h2>
 
-    <nav>
-        <div>Nitheeshreddy's brands</div>
-        <ul>
-            <li><a href="/">home</a></li>
-            <li><a href="/">products</a></li>
-            <li><a href="/">about</li>
+    <nav class="navigation container">
+        <div class="nav-brand">Nitheeshreddy's brands</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline"><a class="link link-active" href="/">home</a></li>
+            <li class="list-item-inline"><a class="link"href="/">products</a></li>
+            <li class="list-item-inline"><a class="link" href="/">about</a></li>
         </ul>
     </nav>
 
@@ -80,38 +82,38 @@
 
     <h2>@header</h2>
 
-    <header>
-        <img src="images/theendis.svg">
-        <h1>heading inside header</h1>
+    <header class="hero">
+        <img class="hero-img" src="images/theendis.svg">
+        <h1 class="hero-heading">Sainitheesh the <span style="color: var(--primary-color);">web-developer</span></h1>
     </header>
 
     <hr>
     <h2>@section</h2>
 
-    <section>
-        <h3>white section</h3>
-        <p>this will have white background</p>
+    <section class="section">
+        <div><h1>white section</h1>
+            <p>If you want to grow as a developer, I can't over-emphasize the benefits of joining a developer community. There are many advantages, from peer-programming to sharing knowledge, mentorship, sharing support, sharing tools, code reviews, answering questions, and much more.</p></div>
     </section>
-    <section>
-        <h3>off white section</h3>
-        <p>this will have gray background</p>
+    <section class="section ow">
+        <div><h1>off white section</h1>
+            <p>If you want to grow as a developer, I can't over-emphasize the benefits of joining a developer community. There are many advantages, from peer-programming to sharing knowledge, mentorship, sharing support, sharing tools, code reviews, answering questions, and much more.</p></div>
     </section>
 
     <hr>
 
     <h2>@footer</h2>
 
-    <footer>
-        <div>some small heading inside footer</div>
-        <ul>
-            <li>socialone</li>
-            <li>socialtwo</li>
-            <li>socialthree</li>
+    <footer class="footer">
+        <div class="footer-header">some small heading inside footer</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline"><a class="link" href="/">socialone</a></li>
+            <li class="list-item-inline"><a class="link" href="/">socialtwo</a></li>
+            <li class="list-item-inline"><a class="link" href="/">socialthree</a></li>
         </ul>
     </footer>
     
    
-
+<div style="padding-bottom: 30vh;"></div>
 
 </body>
 </html>
